@@ -8,6 +8,9 @@ imageName=sfarrell/ubuntu-root
 # Tag to create
 tagName=gcc49-root60412
 
+# Pull the latest base image
+sudo docker pull sfarrell/ubuntu-dev:latest
+
 # Build and tag "latest"
 echo "Building $imageName..."
 sudo docker build -t $imageName .
