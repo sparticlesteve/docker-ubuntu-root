@@ -14,3 +14,6 @@ RUN mkdir -p /atlas && cd /atlas && \
     cmake ../root-6.04.12-source && \
     make -j4 && \
     rm -rf /atlas/root-6.04.12-source /atlas/root_v6.04.12.source.tar.gz
+
+# Link the latest ROOT
+RUN cd /atlas && ln -s -f root-6.04.12 root_current
