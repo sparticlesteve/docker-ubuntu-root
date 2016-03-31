@@ -17,3 +17,6 @@ RUN mkdir -p /atlas && cd /atlas && \
 
 # Link the latest ROOT
 RUN cd /atlas && ln -s -f root-6.04.12 root_current
+
+# Install testing script
+COPY test /atlas/test
